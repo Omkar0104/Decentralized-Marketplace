@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P to P Marketplace</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  </head>
+  <body>
+    <h1>Basic Marketplace</h1>
+    <div id="wallet"></div>
+    <div>
+      <h2>Add an Item</h2>
+      <div>
+        <input type="text" id="new_itemName" placeholder="Item Name..." />
+        <input type="text" id="new_askingPrice" placeholder="Asking Price..." />
+        <button class="btn_add btn" onclick="addItem()">Add Item</button>
+      </div>
+    </div>
+    <div>
+      <h2>All Items</h2>
+      <div id="addItems">
+        <!-- Load All Items Here -->
+      </div>
+      <div id="itemTemplate"></div>
+    </div>
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
